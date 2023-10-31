@@ -1,0 +1,94 @@
+public class miniprojeto2 {
+
+  public static void main(String[]){
+      Scanner scanner = new Scanner(System.in);
+    
+      System.out.println("Olá!, Bem-Vindo a história interativa. Crie a sua persona");
+      System.out.println("Qual é o seu nome? ");
+      String nomePersona = scanner.nextLine();
+
+      System.out.println("Qual é a sua idade? ");
+      int idadePersona = scanner.nextInt();
+
+      System.out.println("Qual a cor do seu cabelo? ");
+      String corcabeloPersona = scanner.nextLine();
+
+      System.out.println("Qual é a cor do seu olho? ");
+      String corolhoPersona = scanner.nextLine();
+
+      System.out.println("Qual é o seu gênero? ");
+      String generoPersona = scanner.nextLine();
+
+
+      System.out.println("Persona criada com sucesso!");
+      System.out.println("Nome: \n- " + nomePersona);
+      System.out.println("Idade: \n- " + idadePersona);
+      System.out.println("Cor do cabelo: \n- " + corcabeloPersona);
+      System.out.println("Cor do olho: \n- " + corolhoPersona);
+      System.out.println("Seu gênero: \n- " + generoPersona);
+  }
+  public static void main(String[]args){
+    Scanner scanner = new Scanner(System.in);
+
+    int PontosPersonas = 10;
+    String nomePersona;
+
+    System.out.println("vamos começar a história!");
+    System.out.println("Você estava voltando do supermercado indo direto para casa, porém era a noite e você mora distante das outras casas... ");
+    System.out.println("Por estar de noite e a rua está extremamente escuro você acaba tropeçando e caindo em um buraco...");
+    System.out.println("Você acabou caindo desacordada em outra realdade paralela.");
+    System.out.println("Você acordou no meio de uma floresta, você levanda assustada, mas tudo oque vê são muitas árvores e duas trilhas em lados opostos.");
+    System.out.println("Agora você terá que escolher qual trilha vai andar a da esquerda (1), ou a direita (2). ");
+    int escolhaTrilha = scanner.nextInt();
+
+    if(escolhaTrilha == 1){
+      System.out.println("No final você encontrou uma rio. Você vai atravessar a nado (1) ou vai procurar uma ponte (2). ");
+      int escolhaRio = scanner.nextInt();
+      nomePersona += 10
+
+      if(escolhaRio == 1){
+        System.out.println("Você atravessou o rio com sucesso e encontrou um tesouro.");
+        nomePersona += 10;
+      }
+      else if(escolhaRio == 2){
+        System.out.println("Você achou uma ponte e atravessou com segurança. Encontrou um acampamento de aventureiros e recebeu ajuda.");
+        nomePersona += 5;
+      }
+      else{
+      System.out.println("Você digitou um caractere não correspondente. Digite novamente!");
+      nomePersona -= 5;
+      }
+    }
+
+    else if(escolhaTrilha == 2){
+      System.out.println("No meio da trilha você encontrou uma carverna. Entrar na caverna (1) ou continuar a trilha (2).");
+      int escolhaCaverna = scanner.nextInt();
+      nomePersona += 10
+
+      if(escolhaCaverna == 1){
+        System.out.println("Você entra na caverna e encontra um dragão. VOCÊ MORREU!");
+        nomePersona -=5;
+      }
+      else if(escolhaCaverna == 2){
+        System.out.println(" Você continuou a tria e encontra um templo antigo. Dentro do templo você encontra um amoleto mágico.");
+        nomePersona += 10;
+      }
+      else{
+        System.out.println("Caractere inválido. Digite novamente!");
+        nomePersona -= 5;
+    }
+
+    else{
+      System.out.println("Caractere inválido. Digite novamente!");
+      nomePersona -= 10;
+    }
+    
+        
+    scanner.close ();
+  }
+    
+
+
+
+    
+  }
